@@ -1,0 +1,8 @@
+{
+  "providers": {
+    "elixir": {
+      "buildCommand": "mix deps.get --only prod && mix compile && mix assets.deploy && mix phx.gen.release && mix release",
+      "startCommand": "bash start.sh"
+    }
+  }
+}
